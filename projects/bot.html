@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>HelperBot — Telegram-бот на Python</title>
+  <link rel="icon" type="image/png" href="../img/fav.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="HelperBot — учебный Telegram-бот на Python для поиска материалов по программированию."
+  />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-50 antialiased">
+
+  <main class="min-h-screen max-w-5xl mx-auto px-4 py-8 md:py-10">
+
+
+    <div class="mb-6">
+      <a href="../index.html"
+         class="inline-flex items-center gap-2 text-xs text-slate-400 hover:text-emerald-400 transition">
+        <span class="text-lg leading-none">←</span>
+        <span>Назад на сайт-визитку</span>
+      </a>
+    </div>
+
+
+    <header class="mb-8 md:mb-10">
+      <p class="text-[11px] uppercase tracking-[0.16em] text-emerald-400/80 mb-2">
+        учебный проект · telegram bot · python
+      </p>
+
+      <h1 class="text-2xl md:text-3xl font-semibold mb-3">
+        HelperBot — Telegram-бот для поиска материалов по программированию
+      </h1>
+
+      <p class="text-sm md:text-base text-slate-300 max-w-3xl">
+        HelperBot — это учебный pet-проект на Python, созданный для закрепления
+        навыков работы с Telegram API, обработкой команд, inline-кнопок,
+        выбором категорий и динамическим выводом информации. Бот помогает пользователю
+        найти нужные учебные материалы: книги, курсы, документацию и практические упражнения
+        по Python, C++, Web и Java.
+      </p>
+
+      <div class="mt-4 flex flex-wrap gap-2 text-[11px] text-slate-300">
+        <span class="px-3 py-1 rounded-full border border-slate-700/80">Python</span>
+        <span class="px-3 py-1 rounded-full border border-slate-700/80">python-telegram-bot</span>
+        <span class="px-3 py-1 rounded-full border border-slate-700/80">AsyncIO</span>
+        <span class="px-3 py-1 rounded-full border border-slate-700/80">Telegram API</span>
+      </div>
+    </header>
+
+
+    <section class="mb-12">
+      <div class="overflow-hidden rounded-3xl border border-slate-800 bg-slate-950 p-4 flex items-center justify-center">
+        <img
+          src="../img/bot_2.png"
+          alt="Скриншот Telegram-бота"
+          class="max-w-full max-h-[30rem] object-contain rounded-2xl"
+        />
+      </div>
+    </section>
+
+
+    <section class="mb-10 md:mb-12">
+      <h2 class="text-lg md:text-xl font-semibold mb-3">Цель проекта</h2>
+
+      <p class="text-sm text-slate-300 max-w-3xl mb-4">
+        Основная цель HelperBot — практическое освоение работы с Telegram API:
+        отправка сообщений, обработка inline-кнопок, callback-запросов,
+        структура команд и организация простого меню. Проект использует реальные принципы обработки событий,
+        но остаётся лёгким для обучения.
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-6 text-sm text-slate-200">
+        <div>
+          <p>Бот помогает пользователю:</p>
+          <ul class="list-disc list-inside text-slate-300 mt-2 space-y-1">
+            <li>выбрать язык программирования;</li>
+            <li>получить подборку учебных материалов;</li>
+            <li>читать документацию, статьи, книги;</li>
+            <li>находить практические задания по выбранному языку.</li>
+          </ul>
+        </div>
+        <div>
+          <p>С технической точки зрения проект тренирует:</p>
+          <ul class="list-disc list-inside text-slate-300 mt-2 space-y-1">
+            <li>работу с python-telegram-bot (v20+);</li>
+            <li>обработку команд /start, /help;</li>
+            <li>callback-кнопки и inline-меню;</li>
+            <li>асинхронную структуру приложений.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="mb-10 md:mb-12">
+      <h2 class="text-lg md:text-xl font-semibold mb-3">Функциональность</h2>
+
+      <div class="grid md:grid-cols-3 gap-6 text-sm text-slate-200">
+
+        <div class="rounded-2xl border border-slate-800 bg-slate-950 p-4">
+          <h3 class="text-sm font-semibold text-slate-100 mb-2">Команды</h3>
+          <ul class="list-disc list-inside text-slate-300 text-[13px] space-y-1">
+            <li>/start — запуск бота и меню выбора языка;</li>
+            <li>/help — помощь и объяснение работы;</li>
+            <li>автоматическое меню через inline-кнопки.</li>
+          </ul>
+        </div>
+
+        <div class="rounded-2xl border border-slate-800 bg-slate-950 p-4">
+          <h3 class="text-sm font-semibold text-slate-100 mb-2">Материалы</h3>
+          <ul class="list-disc list-inside text-slate-300 text-[13px] space-y-1">
+            <li>Основы языка (Python, C++, Web, Java);</li>
+            <li>Книги и методички;</li>
+            <li>Курсы и интерактивные тренажёры;</li>
+            <li>Официальная документация;</li>
+            <li>Практические задачи (Codewars, LeetCode и др.).</li>
+          </ul>
+        </div>
+
+        <div class="rounded-2xl border border-slate-800 bg-slate-950 p-4">
+          <h3 class="text-sm font-semibold text-slate-100 mb-2">Взаимодействие</h3>
+          <ul class="list-disc list-inside text-slate-300 text-[13px] space-y-1">
+            <li>Inline-кнопки для выбора языка;</li>
+            <li>Callback-кнопки для выбора категорий;</li>
+            <li>Обновление сообщений без спама;</li>
+            <li>Асинхронный Event-Loop.</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="mb-10 md:mb-12">
+      <h2 class="text-lg md:text-xl font-semibold mb-3">Архитектура проекта</h2>
+
+      <div class="grid md:grid-cols-3 gap-6 text-sm text-slate-200">
+
+        <div class="rounded-2xl border border-slate-800 bg-slate-950 p-4">
+          <h3 class="text-sm font-semibold text-slate-100 mb-2">Структура файлов</h3>
+          <ul class="list-disc list-inside text-slate-300 text-[13px] space-y-1">
+            <li><code>main.py</code> — основной файл бота;</li>
+            <li><code>materials</code> — словарь материалов;</li>
+            <li><code>keyboards</code> — inline-кнопки;</li>
+            <li><code>handlers</code> — обработчики команд;</li>
+            <li><code>/img</code> — превью.</li>
+          </ul>
+        </div>
+
+        <div class="rounded-2xl border border-slate-800 bg-slate-950 p-4">
+          <h3 class="text-sm font-semibold text-slate-100 mb-2">Техническая логика</h3>
+          <ul class="list-disc list-inside text-slate-300 text-[13px] space-y-1">
+            <li>Асинхронный <code>ApplicationBuilder</code>;</li>
+            <li>Разделение логики CallbackQuery и Message;</li>
+            <li>Статические словари материалов;</li>
+            <li>Обновление сообщений через <code>edit_message_text</code>.</li>
+          </ul>
+        </div>
+
+        <div class="rounded-2xl border border-slate-800 bg-slate-950 p-4">
+          <h3 class="text-sm font-semibold text-slate-100 mb-2">Почему такая структура?</h3>
+          <ul class="list-disc list-inside text-slate-300 text-[13px] space-y-1">
+            <li>минимальная сложность — идеально для обучения;</li>
+            <li>легко расширить новыми разделами;</li>
+            <li>код читаемый и чистый;</li>
+            <li>подходит как маленький pet-проект в портфолио.</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+   
+    <section class="mb-10 md:mb-12">
+      <h2 class="text-lg md:text-xl font-semibold mb-3">Моя роль</h2>
+
+      <p class="text-sm text-slate-300 mb-3">
+        Я полностью разработал архитектуру и логику бота:
+      </p>
+
+      <ul class="list-disc list-inside text-slate-300 text-sm space-y-1">
+        <li>написал структуру inline-меню;</li>
+        <li>реализовал хендлеры для команд;</li>
+        <li>построил дерево категорий и материалов;</li>
+        <li>настроил асинхронный event-loop;</li>
+        <li>тестировал работу бота в Telegram.</li>
+      </ul>
+    </section>
+
+ 
+<section class="mb-12">
+  <h2 class="text-lg md:text-xl font-semibold mb-4">Ссылки и код</h2>
+
+  <div class="space-y-4">
+
+
+    <div class="rounded-2xl border border-slate-800 bg-slate-950 p-4 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-4">
+        <div class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center">
+ 
+          <svg class="w-6 h-6 text-emerald-400" fill="currentColor" viewBox="0 0 24 24">
+            <path fill-rule="evenodd"
+              d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.29 3.44 9.78 8.21 11.37.6.11.82-.26.82-.58
+              0-.29-.01-1.04-.02-2.04-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.34-1.77-1.34-1.77-1.1-.75.08-.74.08-.74
+              1.22.09 1.86 1.26 1.86 1.26 1.08 1.85 2.83 1.32 3.52 1.01.11-.78.42-1.32.76-1.63-2.67-.31-5.47-1.34-5.47-5.95
+              0-1.31.47-2.38 1.24-3.22-.13-.31-.54-1.57.12-3.28 0 0 1.01-.32 3.3 1.23a11.4 11.4 0 0 1 3-.41c1.02.01 2.05.14 3 .41
+              2.28-1.55 3.29-1.23 3.29-1.23.66 1.71.25 2.97.12 3.28.77.84 1.23 1.91 1.23 3.22
+              0 4.62-2.8 5.63-5.48 5.93.43.38.81 1.12.81 2.26 0 1.63-.02 2.94-.02 3.34
+              0 .32.22.7.83.58A12.01 12.01 0 0 0 24 12.5C24 5.87 18.63.5 12 .5z"
+              clip-rule="evenodd"/>
+          </svg>
+        </div>
+
+        <div>
+          <p class="text-sm text-slate-300">GitHub-репозиторий проекта</p>
+          <a 
+            href="https://github.com/MorFusti/Helper-Pr.Study" 
+            target="_blank"
+            class="text-[13px] text-emerald-400 hover:text-emerald-300 transition"
+          >
+            github.com/MorFusti/Helper-Pr.Study
+          </a>
+        </div>
+      </div>
+
+      <a 
+        href="https://github.com/MorFusti/Helper-Pr.Study"
+        target="_blank"
+        class="text-xs px-4 py-2 rounded-md border border-emerald-500 text-emerald-400 hover:bg-emerald-500/10 transition"
+      >
+        Открыть код →
+      </a>
+    </div>
+
+    <!-- Telegram Bot -->
+    <div class="rounded-2xl border border-slate-800 bg-slate-950 p-4 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-4">
+        <div class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center">
+          <!-- Иконка Telegram -->
+          <svg class="w-6 h-6 text-emerald-400" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M9.999 15.2 9.9 18c.3 0 .5-.1.7-.3l3.3-3.1 3.4 2.5c.6.3 1 .1 1.1-.6l2-12c.2-.9-.3-1.3-1.1-1L2.4 9.5c-.8.3-.8.8-.1 1l4.7 1.5L17.3 6c.4-.3.9-.1.5.2L9.999 15.2z"/>
+          </svg>
+        </div>
+
+        <div>
+          <p class="text-sm text-slate-300">Telegram-бот</p>
+          <span class="text-[13px] text-slate-500">
+            @Helper_ProgramSrudybot — временно недоступен
+          </span>
+        </div>
+      </div>
+
+      <button 
+        disabled
+        class="text-xs px-4 py-2 rounded-md border border-slate-700 text-slate-500 cursor-not-allowed"
+      >
+        Недоступен
+      </button>
+    </div>
+
+  </div>
+</section>
+
+    <footer class="pt-4 border-t border-slate-800 text-[11px] text-slate-500">
+      HelperBot · Telegram-бот на Python · разработка: Филин Денис
+    </footer>
+  </main>
+
+</body>
+</html>

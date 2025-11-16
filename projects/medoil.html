@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>MedOil — проект Филина Дениса</title>
+  <link rel="icon" type="image/png" href="../img/fav.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="MedOil — дипломный проект интернет-магазина оздоровительных услуг и продукции. PHP, MySQL, Tailwind CSS, JavaScript, Alpine.js."
+  />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-50 antialiased">
+
+  <main class="min-h-screen max-w-5xl mx-auto px-4 py-8 md:py-10">
+
+    <div class="mb-6">
+      <a href="../index.html"
+         class="inline-flex items-center gap-2 text-xs text-slate-400 hover:text-emerald-400 transition">
+        <span class="text-lg leading-none">←</span>
+        <span>Назад на сайт-визитку</span>
+      </a>
+    </div>
+
+    <header class="mb-8 md:mb-10">
+      <p class="text-[11px] uppercase tracking-[0.16em] text-emerald-400/80 mb-2">
+        дипломный проект · интернет-магазин оздоровительных услуг
+      </p>
+      <h1 class="text-2xl md:text-3xl font-semibold mb-3">
+        MedOil — веб-сайт оздоровительных услуг и продукции
+      </h1>
+      <p class="text-sm md:text-base text-slate-300 max-w-3xl">
+        MedOil — учебно-боевой проект интернет-магазина, где пользователь может
+        посмотреть каталог оздоровительных товаров, собрать корзину, оформить заказ
+        и записаться на консультацию. Для владельца есть админ-панель с управлением
+        товарами, заказами и заявками.
+      </p>
+
+      <div class="mt-4 flex flex-wrap gap-2 text-[11px] text-slate-300">
+        <span class="px-3 py-1 rounded-full border border-slate-700/80">PHP</span>
+        <span class="px-3 py-1 rounded-full border border-slate-700/80">MySQL</span>
+        <span class="px-3 py-1 rounded-full border border-slate-700/80">JavaScript</span>
+        <span class="px-3 py-1 rounded-full border border-slate-700/80">Tailwind CSS</span>
+        <span class="px-3 py-1 rounded-full border border-slate-700/80">Alpine.js</span>
+        <span class="px-3 py-1 rounded-full border border-slate-700/80">Apache / Open Server</span>
+      </div>
+    </header>
+
+   <section class="mb-12">
+  <div class="relative w-full" data-slider>
+    <div class="overflow-hidden rounded-3xl border border-slate-800 bg-slate-950">
+      <div class="flex transition-transform duration-500" data-slider-track>
+
+        <div class="w-full flex-shrink-0" data-slide>
+          <div class="w-full h-80 md:h-[28rem] lg:h-[32rem] bg-slate-900 relative overflow-hidden flex items-center justify-center p-3 md:p-4">
+            <img
+              src="../img/medoil_1.png"
+              class="max-w-full max-h-full object-contain bg-slate-950 rounded-2xl"
+              alt="MedOil — каталог"
+            />
+          </div>
+        </div>
+
+        <div class="w-full flex-shrink-0" data-slide>
+          <div class="w-full h-80 md:h-[28rem] lg:h-[32rem] bg-slate-900 relative overflow-hidden flex items-center justify-center p-3 md:p-4">
+            <img
+              src="../img/medoil_2.png"
+              class="max-w-full max-h-full object-contain bg-slate-950 rounded-2xl"
+              alt="MedOil — личный кабинет"
+            />
+          </div>
+        </div>
+
+        <div class="w-full flex-shrink-0" data-slide>
+          <div class="w-full h-80 md:h-[28rem] lg:h-[32rem] bg-slate-900 relative overflow-hidden flex items-center justify-center p-3 md:p-4">
+            <img
+              src="../img/medoil_3.png"
+              class="max-w-full max-h-full object-contain bg-slate-950 rounded-2xl"
+              alt="MedOil — главная"
+            />
+          </div>
+        </div>
+
+        <div class="w-full flex-shrink-0" data-slide>
+          <div class="w-full h-80 md:h-[28rem] lg:h-[32rem] bg-slate-900 relative overflow-hidden flex items-center justify-center p-3 md:p-4">
+            <img
+              src="../img/medoil_4.png"
+              class="max-w-full max-h-full object-contain bg-slate-950 rounded-2xl"
+              alt="MedOil — админ-панель"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button
+      type="button"
+      class="absolute left-3 top-1/2 -translate-y-1/2 bg-slate-900/80 text-slate-100 px-3 py-1 rounded-md text-2xl"
+      data-slider-prev
+    >
+      ‹
+    </button>
+
+    <button
+      type="button"
+      class="absolute right-3 top-1/2 -translate-y-1/2 bg-slate-900/80 text-slate-100 px-3 py-1 rounded-md text-2xl"
+      data-slider-next
+    >
+      ›
+    </button>
+
+    <div class="mt-4 flex justify-center gap-2">
+      <button class="w-3 h-3 rounded-full bg-slate-500/60" data-slider-dot></button>
+      <button class="w-3 h-3 rounded-full bg-slate-500/60" data-slider-dot></button>
+      <button class="w-3 h-3 rounded-full bg-slate-500/60" data-slider-dot></button>
+      <button class="w-3 h-3 rounded-full bg-slate-500/60" data-slider-dot></button>
+    </div>
+  </div>
+</section>
+
+      <button
+        type="button"
+        class="hs-carousel-prev absolute left-2 top-1/2 -translate-y-1/2 bg-slate-900/70 text-slate-100 px-3 py-1 rounded-md text-2xl"
+      >
+        ‹
+      </button>
+
+      <button
+        type="button"
+        class="hs-carousel-next absolute right-2 top-1/2 -translate-y-1/2 bg-slate-900/70 text-slate-100 px-3 py-1 rounded-md text-2xl"
+      >
+        ›
+      </button>
+
+      <div class="hs-carousel-pagination absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
+        <span class="hs-carousel-active:bg-emerald-400 w-3 h-3 rounded-full bg-slate-500/60 cursor-pointer"></span>
+        <span class="hs-carousel-active:bg-emerald-400 w-3 h-3 rounded-full bg-slate-500/60 cursor-pointer"></span>
+        <span class="hs-carousel-active:bg-emerald-400 w-3 h-3 rounded-full bg-slate-500/60 cursor-pointer"></span>
+        <span class="hs-carousel-active:bg-emerald-400 w-3 h-3 rounded-full bg-slate-500/60 cursor-pointer"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="mb-10 md:mb-12">
+      <h2 class="text-lg md:text-xl font-semibold mb-3">Цель проекта</h2>
+      <div class="grid md:grid-cols-2 gap-6 text-sm text-slate-200">
+        <div class="space-y-2">
+          <p>
+            Основная цель — разработать работающий прототип интернет-сервиса для компании
+            оздоровительных услуг, через который клиент может:
+          </p>
+          <ul class="list-disc list-inside text-slate-300 space-y-1">
+            <li>посмотреть каталог товаров и услуг;</li>
+            <li>добавить позиции в корзину и оформить заказ;</li>
+            <li>записаться на консультацию к специалисту;</li>
+            <li>видеть свои заказы в личном кабинете.</li>
+          </ul>
+        </div>
+        <div class="space-y-2">
+          <p>Со стороны владельца проекта система должна позволять:</p>
+          <ul class="list-disc list-inside text-slate-300 space-y-1">
+            <li>управлять товарами и услугами через админ-панель;</li>
+            <li>просматривать заказы и менять их статусы;</li>
+            <li>получать заявки на консультацию и работать с ними;</li>
+            <li>хранить базу клиентов, заказов и записей в одной БД.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="mb-10 md:mb-12">
+      <h2 class="text-lg md:text-xl font-semibold mb-3">Функциональность</h2>
+      <div class="grid md:grid-cols-3 gap-6 text-sm text-slate-200">
+
+
+        <div class="rounded-2xl border border-slate-800 bg-slate-950 p-4 space-y-2">
+          <h3 class="text-sm font-semibold text-slate-100">Пользователь</h3>
+          <ul class="list-disc list-inside text-slate-300 space-y-1 text-[13px]">
+            <li>Регистрация и авторизация с проверкой данных.</li>
+            <li>Личный кабинет с данными профиля.</li>
+            <li>Просмотр каталога товаров и услуг.</li>
+            <li>Карточка товара с описанием и ценой.</li>
+          </ul>
+        </div>
+
+
+        <div class="rounded-2xl border border-slate-800 bg-slate-950 p-4 space-y-2">
+          <h3 class="text-sm font-semibold text-slate-100">Корзина и заказы</h3>
+          <ul class="list-disc list-inside text-slate-300 space-y-1 text-[13px]">
+            <li>Добавление товаров в корзину без перезагрузки страницы.</li>
+            <li>Анимированный счётчик количества товаров (Alpine.js).</li>
+            <li>Изменение количества, удаление позиций, пересчёт суммы.</li>
+            <li>Оформление заказа и запись в таблицу <code>orders</code>.</li>
+          </ul>
+        </div>
+
+        <div class="rounded-2xl border border-slate-800 bg-slate-950 p-4 space-y-2">
+          <h3 class="text-sm font-semibold text-slate-100">Консультации и админ-панель</h3>
+          <ul class="list-disc list-inside text-slate-300 space-y-1 text-[13px]">
+            <li>Форма записи на консультацию (таблица <code>appointments</code>).</li>
+            <li>Админ-панель с просмотром заказов и заявок.</li>
+            <li>Изменение статусов заказов (новый / в работе / завершён).</li>
+            <li>Управление товарами: активация/деактивация позиций.</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="mb-10 md:mb-12">
+      <h2 class="text-lg md:text-xl font-semibold mb-3">Технологический стек</h2>
+      <div class="grid md:grid-cols-2 gap-6 text-sm text-slate-200">
+        <div class="space-y-2">
+          <h3 class="text-sm font-semibold text-slate-100">Backend и база данных</h3>
+          <ul class="list-disc list-inside text-slate-300 space-y-1 text-[13px]">
+            <li>PHP — обработка форм, работа с сессиями, авторизация, логика корзины и заказов.</li>
+            <li>MySQL — таблицы <code>users</code>, <code>products</code>, <code>orders</code>, <code>appointments</code> и др.</li>
+            <li>Связи между таблицами по ключам пользователя и заказов.</li>
+            <li>Проверка входа и ограничение доступа к админ-панели.</li>
+          </ul>
+        </div>
+        <div class="space-y-2">
+          <h3 class="text-sm font-semibold text-slate-100">Frontend и интерфейс</h3>
+          <ul class="list-disc list-inside text-slate-300 space-y-1 text-[13px]">
+            <li>Tailwind CSS — адаптивная верстка, быстрый прототипинг без ручного CSS.</li>
+            <li>JavaScript — работа с DOM, обновление корзины, интерактивность форм.</li>
+            <li>Alpine.js — анимированный счётчик товаров, простая реактивность.</li>
+            <li>Node.js — окружение для сборки и работы с Tailwind (dev-скрипты).</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="mb-10 md:mb-12">
+      <h2 class="text-lg md:text-xl font-semibold mb-3">Архитектура и структура проекта</h2>
+      <div class="grid md:grid-cols-3 gap-6 text-sm text-slate-200">
+
+        <div class="rounded-2xl border border-slate-800 bg-slate-950 p-4 space-y-2">
+          <h3 class="text-sm font-semibold text-slate-100">Структура файлов</h3>
+          <ul class="list-disc list-inside text-slate-300 space-y-1 text-[13px]">
+            <li><code>/public</code> — основные страницы (главная, каталог, корзина, ЛК).</li>
+            <li><code>/admin</code> — административная часть, работа с товарами и заказами.</li>
+            <li><code>/includes</code> — общие компоненты (header, footer, подключение к БД).</li>
+            <li><code>/assets</code> — скрипты, стили, изображения.</li>
+          </ul>
+        </div>
+
+        <div class="rounded-2xl border border-slate-800 bg-slate-950 p-4 space-y-2">
+          <h3 class="text-sm font-semibold text-slate-100">Модель данных</h3>
+          <ul class="list-disc list-inside text-slate-300 space-y-1 text-[13px]">
+            <li><code>users</code> — данные пользователей и их учётные записи.</li>
+            <li><code>products</code> — товары и услуги (название, описание, цена, статус).</li>
+            <li><code>orders</code> — заказы, связанные с пользователями.</li>
+            <li><code>appointments</code> — записи на консультации.</li>
+          </ul>
+        </div>
+
+        <div class="rounded-2xl border border-slate-800 bg-slate-950 p-4 space-y-2">
+          <h3 class="text-sm font-semibold text-slate-100">Особенности реализации</h3>
+          <ul class="list-disc list-inside text-slate-300 space-y-1 text-[13px]">
+            <li>Разделение клиентской и административной логики.</li>
+            <li>Переиспользуемые include-файлы для шапки, подвала и БД.</li>
+            <li>Обновление корзины без перезагрузки страницы.</li>
+            <li>Подготовка к расширению (новые роли, типы услуг, фильтры).</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="mb-10 md:mb-12">
+      <h2 class="text-lg md:text-xl font-semibold mb-3">Моя роль в проекте</h2>
+      <div class="space-y-3 text-sm text-slate-200">
+        <p>
+          В MedOil я выполнял роль <span class="text-emerald-300">full-stack разработчика</span>:
+          от проектирования структуры БД и продумывания функционала до верстки и написания клиентской логики.
+        </p>
+        <p>Ключевые задачи, которые я решал:</p>
+        <ul class="list-disc list-inside text-slate-300 space-y-1">
+          <li>Спроектировал структуру базы данных и связи между таблицами.</li>
+          <li>Реализовал регистрацию, авторизацию и базовый личный кабинет.</li>
+          <li>Сделал корзину с динамическим обновлением и записью заказов в БД.</li>
+          <li>Разработал прототип админ-панели для работы с заказами и товарами.</li>
+          <li>Сверстал основные страницы с помощью Tailwind CSS.</li>
+        </ul>
+      </div>
+    </section>
+
+    
+    <section class="mb-12">
+  <h2 class="text-lg md:text-xl font-semibold mb-4">Исходный код</h2>
+
+  <div class="rounded-2xl border border-slate-800 bg-slate-950 p-5 md:p-6 flex items-center justify-between gap-4">
+
+   
+    <div class="flex items-center gap-4">
+      <div class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center">
+  
+        <svg class="w-6 h-6 text-emerald-400" fill="currentColor" viewBox="0 0 24 24">
+          <path fill-rule="evenodd"
+            d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.29 3.44 9.78 8.21 11.37.6.11.82-.26.82-.58
+            0-.29-.01-1.04-.02-2.04-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.34-1.77-1.34-1.77-1.1-.75.08-.74.08-.74
+            1.22.09 1.86 1.26 1.86 1.26 1.08 1.85 2.83 1.32 3.52 1.01.11-.78.42-1.32.76-1.63-2.67-.31-5.47-1.34-5.47-5.95
+            0-1.31.47-2.38 1.24-3.22-.13-.31-.54-1.57.12-3.28 0 0 1.01-.32 3.3 1.23a11.4 11.4 0 0 1 3-.41c1.02.01 2.05.14 3 .41
+            2.28-1.55 3.29-1.23 3.29-1.23.66 1.71.25 2.97.12 3.28.77.84 1.23 1.91 1.23 3.22
+            0 4.62-2.8 5.63-5.48 5.93.43.38.81 1.12.81 2.26 0 1.63-.02 2.94-.02 3.34
+            0 .32.22.7.83.58A12.01 12.01 0 0 0 24 12.5C24 5.87 18.63.5 12 .5z"
+            clip-rule="evenodd" />
+        </svg>
+      </div>
+
+      <div>
+        <p class="text-sm text-slate-300">GitHub-репозиторий проекта</p>
+        <a 
+          href="https://github.com/MorFusti/MedOil" 
+          target="_blank"
+          class="text-[13px] text-emerald-400 hover:text-emerald-300 transition"
+        >
+          github.com/MorFusti/MedOil
+        </a>
+      </div>
+    </div>
+
+    
+    <a 
+      href="https://github.com/MorFusti/MedOil" 
+      target="_blank"
+      class="text-xs px-4 py-2 rounded-md border border-emerald-500 text-emerald-400 hover:bg-emerald-500/10 transition"
+    >
+      Открыть код →
+    </a>
+
+  </div>
+</section>
+
+    <footer class="pt-4 border-t border-slate-800 text-[11px] text-slate-500">
+      MedOil · дипломный проект · разработка: Филин Денис
+    </footer>
+
+  </main>
+  <script src="https://preline.co/assets/js/hs-ui.bundle.min.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const slider = document.querySelector('[data-slider]');
+    if (!slider) return;
+
+    const track = slider.querySelector('[data-slider-track]');
+    const slides = slider.querySelectorAll('[data-slide]');
+    const prevBtn = slider.querySelector('[data-slider-prev]');
+    const nextBtn = slider.querySelector('[data-slider-next]');
+    const dots = slider.querySelectorAll('[data-slider-dot]');
+
+    let index = 0;
+
+    const update = () => {
+      track.style.transform = `translateX(-${index * 100}%)`;
+      dots.forEach((dot, i) => {
+        if (i === index) {
+          dot.classList.add('bg-emerald-400');
+          dot.classList.remove('bg-slate-500/60');
+        } else {
+          dot.classList.remove('bg-emerald-400');
+          dot.classList.add('bg-slate-500/60');
+        }
+      });
+    };
+
+    const goTo = (i) => {
+      const total = slides.length;
+      index = (i + total) % total;
+      update();
+    };
+
+    prevBtn?.addEventListener('click', () => goTo(index - 1));
+    nextBtn?.addEventListener('click', () => goTo(index + 1));
+
+    dots.forEach((dot, i) => {
+      dot.addEventListener('click', () => goTo(i));
+    });
+
+
+    update();
+  });
+</script>
+
+</body>
+</html>
